@@ -1,30 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "/home/samineses/unicamp/mc322/projetoFinal/HelloWorld.csproj": {}
+    "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\UNICAMP\\ProjetoFinal_MC322\\HelloWorld.csproj": {}
   },
   "projects": {
-    "/home/samineses/unicamp/mc322/projetoFinal/HelloWorld.csproj": {
+    "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\UNICAMP\\ProjetoFinal_MC322\\HelloWorld.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/samineses/unicamp/mc322/projetoFinal/HelloWorld.csproj",
+        "projectUniqueName": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\UNICAMP\\ProjetoFinal_MC322\\HelloWorld.csproj",
         "projectName": "HelloWorld",
-        "projectPath": "/home/samineses/unicamp/mc322/projetoFinal/HelloWorld.csproj",
-        "packagesPath": "/home/samineses/.nuget/packages/",
-        "outputPath": "/home/samineses/unicamp/mc322/projetoFinal/obj/",
+        "projectPath": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\UNICAMP\\ProjetoFinal_MC322\\HelloWorld.csproj",
+        "packagesPath": "C:\\Users\\thiag\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\UNICAMP\\ProjetoFinal_MC322\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/samineses/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\thiag\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net8.0"
+          "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net8.0": {
-            "targetAlias": "net8.0",
+          "net7.0": {
+            "targetAlias": "net7.0",
             "projectReferences": {}
           }
         },
@@ -35,8 +37,8 @@
         }
       },
       "frameworks": {
-        "net8.0": {
-          "targetAlias": "net8.0",
+        "net7.0": {
+          "targetAlias": "net7.0",
           "imports": [
             "net461",
             "net462",
@@ -53,7 +55,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.105/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
         }
       }
     }

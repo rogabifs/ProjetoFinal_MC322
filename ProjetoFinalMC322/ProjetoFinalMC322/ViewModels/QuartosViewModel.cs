@@ -6,11 +6,10 @@ namespace ProjetoFinalMC322.ViewModels;
 
 public partial class QuartosViewModel: ViewModelBase
 {
-    // [ObservableProperty]
-    // private ObservableCollection<QuartosModel> quartos;
-
-    // public QuartosViewModel()
-    // {
-    //     Quartos = new ObservableCollection<QuartosModel>(MockQuartos.GetMockQuartos());
-    // }
+   private QuartosModel quartos = new QuartosModel(0,"", true); 
+   public QuartosModel[] getMockData()
+   {
+      return quartos.GetMockQuartos();
+   }
+   
 }

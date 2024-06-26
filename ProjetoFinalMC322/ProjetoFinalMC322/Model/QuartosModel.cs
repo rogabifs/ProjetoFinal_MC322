@@ -51,11 +51,8 @@ public class QuartosModel
         this.Tipo = tipo;
         this.Disponivel = disponivel;
     }
-}
-
-public class MockQuartos
-{
-    public static QuartosModel[] GetMockQuartos()
+    
+    public QuartosModel[] GetMockQuartos()
     {
         QuartosModel[] quartos = new QuartosModel[]
         {
@@ -68,15 +65,10 @@ public class MockQuartos
 
         return quartos;
     }
-
-    private static QuartosModel RetornaQuarto(QuartosModel quarto)
+    
+    private QuartosModel RetornaQuarto(QuartosModel quarto)
     {
         return quarto;
     }
-    
-    public static QuartosModel ListarQuarto(int index)
-    { 
-        QuartosModel[] listaDeQuartos = GetMockQuartos();
-        return listaDeQuartos[index];
-    }
 }
+

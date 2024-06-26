@@ -66,4 +66,16 @@ public class ReservaModel
             return $"{quartoReservado}\n{cliente}\ncheckIn: {checkIn}\ncheckOut: {checkOut}";
         }
         
+        // public static ReservaModel[] GetMockReservas(ClientesModel[] clientes, QuartosModel[] quartos)
+        // {
+        //     ReservaModel[] reservas = new ReservaModel[]
+        //     {
+        //         new ReservaModel(quartos[0], clientes[0], DateTime.Parse("2024-07-01"), DateTime.Parse("2024-07-05")),
+        //         new ReservaModel(quartos[1], clientes[1], DateTime.Parse("2024-07-02"), DateTime.Parse("2024-07-06")),
+        //         new ReservaModel(quartos[2], clientes[2], DateTime.Parse("2024-07-03"), DateTime.Parse("2024-07-07"))
+        //     };
+        //
+        //     return reservas;
+        // }
+        
 }

@@ -35,4 +35,16 @@ public class ClientesModel
     public override string ToString() => $"Cliente: [Nome: {nome}\n" +
                                          $"Idade:{idade}\n" +
                                          $" Cpf: {cpf}]\n"; 
+    
+    public ClientesModel[] GetMockClientes()
+    {
+        ClientesModel[] clientes = new ClientesModel[]
+        {
+            new ClientesModel() { nome = "Maria Silva", idade = 28, cpf = 123456789 },
+            new ClientesModel() { nome = "João Souza", idade = 35, cpf = 987654321 },
+            new ClientesModel() { nome = "Ana Costa", idade = 24, cpf = 456789123 }
+        };
+
+        return clientes;
+    }
 }

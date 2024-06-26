@@ -38,7 +38,8 @@ public partial class MainViewModel : ObservableObject
         new ListItemTemplate(typeof(QuartosViewModel)),
         new ListItemTemplate(typeof(ClientesViewModel)),
         new ListItemTemplate(typeof(FuncionariosViewModel)),
-        new ListItemTemplate(typeof(RestauranteViewModel))
+        new ListItemTemplate(typeof(RestauranteViewModel)),
+        new ListItemTemplate(typeof(QuartoTesteViewModel))
     };
     
        

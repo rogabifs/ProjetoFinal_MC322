@@ -35,4 +35,16 @@ public class FuncionariosModel
     {
         return $"Funcionario [Nome: {Nome}, Cargo: {Cargo}]";
     } 
+    
+    public FuncionariosModel[] GetMockFuncionarios()
+    {
+        FuncionariosModel[] funcionarios = new FuncionariosModel[]
+        {
+            new FuncionariosModel("João da Silva", "Recepcionista"),
+            new FuncionariosModel("Maria Souza", "Gerente"),
+            new FuncionariosModel("Pedro Santos", "Técnico de Manutenção")
+        };
+
+        return funcionarios;
+    }
 }

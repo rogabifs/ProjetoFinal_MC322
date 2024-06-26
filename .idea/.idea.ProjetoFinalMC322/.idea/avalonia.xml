@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AvaloniaProject">
+    <option name="projectPerEditor">
+      <map>
+        <entry key="ProjetoFinalMC322/ProjetoFinalMC322/App.axaml" value="ProjetoFinalMC322/ProjetoFinalMC322.Desktop/ProjetoFinalMC322.Desktop.csproj" />
+        <entry key="ProjetoFinalMC322/ProjetoFinalMC322/Views/ClientesView.axaml" value="ProjetoFinalMC322/ProjetoFinalMC322.Desktop/ProjetoFinalMC322.Desktop.csproj" />
+        <entry key="ProjetoFinalMC322/ProjetoFinalMC322/Views/FuncionariosView.axaml" value="ProjetoFinalMC322/ProjetoFinalMC322.Desktop/ProjetoFinalMC322.Desktop.csproj" />
+        <entry key="ProjetoFinalMC322/ProjetoFinalMC322/Views/MainView.axaml" value="ProjetoFinalMC322/ProjetoFinalMC322.Desktop/ProjetoFinalMC322.Desktop.csproj" />
+        <entry key="ProjetoFinalMC322/ProjetoFinalMC322/Views/MainWindow.axaml" value="ProjetoFinalMC322/ProjetoFinalMC322.Desktop/ProjetoFinalMC322.Desktop.csproj" />
+        <entry key="ProjetoFinalMC322/ProjetoFinalMC322/Views/QuartoTeste.axaml" value="ProjetoFinalMC322/ProjetoFinalMC322.Desktop/ProjetoFinalMC322.Desktop.csproj" />
+        <entry key="ProjetoFinalMC322/ProjetoFinalMC322/Views/QuartoTesteView.axaml" value="ProjetoFinalMC322/ProjetoFinalMC322.Desktop/ProjetoFinalMC322.Desktop.csproj" />
+        <entry key="ProjetoFinalMC322/ProjetoFinalMC322/Views/QuartosView.axaml" value="ProjetoFinalMC322/ProjetoFinalMC322.Desktop/ProjetoFinalMC322.Desktop.csproj" />
+        <entry key="ProjetoFinalMC322/ProjetoFinalMC322/Views/RestauranteView.axaml" value="ProjetoFinalMC322/ProjetoFinalMC322.Desktop/ProjetoFinalMC322.Desktop.csproj" />
+      </map>
+    </option>
+  </component>
+</project>

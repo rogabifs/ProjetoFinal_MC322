@@ -1,0 +1,25 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vm="clr-namespace:ProjetoFinalMC322.ViewModels"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="ProjetoFinalMC322.Views.QuartoTesteView"
+             x:DataType="vm:QuartoTesteViewModel">
+    <StackPanel Margin="20">
+        <!-- Campo de texto para o tipo de quarto -->
+        <TextBlock Text="Tipo de Quarto:" Margin="0,0,0,10"/>
+        <TextBox Text="{Binding TipoQuarto}" Width="200" Margin="0,0,0,20"/>
+
+        <!-- Campo numérico para o número do quarto -->
+        <TextBlock Text="Número do Quarto:" Margin="0,0,0,10"/>
+        <NumericUpDown Value="{Binding NumeroQuarto}" Width="200" Margin="0,0,0,20"/>
+
+        <!-- Campo booleano para a disponibilidade do quarto -->
+        <TextBlock Text="Disponível:" Margin="0,0,0,10"/>
+        <CheckBox IsChecked="{Binding Disponivel}" Margin="0,0,0,20"/>
+
+        <!-- Botão para salvar as informações -->
+        <Button Command="{Binding SalvarCommand}" Content="Salvar" Width="100" Margin="0,20,0,0" HorizontalAlignment="Center"/>
+    </StackPanel>
+</UserControl>

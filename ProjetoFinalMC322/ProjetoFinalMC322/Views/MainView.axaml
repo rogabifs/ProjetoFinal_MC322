@@ -1,0 +1,59 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vm="clr-namespace:ProjetoFinalMC322.ViewModels"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="ProjetoFinalMC322.Views.MainView"
+             x:DataType="vm:MainViewModel">
+  <Design.DataContext>
+    <!-- This only sets the DataContext for the previewer in an IDE,
+         to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
+    <vm:MainViewModel />
+  </Design.DataContext>
+    <SplitView IsPaneOpen="{Binding IsPaneOpen}"
+               OpenPaneLength="330"
+               CompactPaneLength="1000"
+               DisplayMode="CompactInline"
+               Background="#B9EDE7"
+               PaneBackground="#5b1023"> <!--fundo geral e lateral vermelho e branco_edit-->
+        <SplitView.Pane>
+           <StackPanel Spacing="8"
+                       Margin="1">
+               <TextBlock 
+                    Text = "Bem-Vindo ao Hotel X"
+                    FontFamily = "Avant Garde"
+                    FontSize = "25"
+                    FontWeight = "Bold"
+                    Foreground = "#efece2"
+                    Background = "#5b1023"
+                    HorizontalAlignment = "Center"/>  <!--titulo e seu fundo vermelho2 editado-->
+               <ListBox 
+                    ItemsSource="{Binding Items}" 
+                    SelectedItem="{Binding SelectedListItem}" 
+                    Background="#7D112D"> <!--maior vermelho2 editado-->
+                   <ListBox.ItemTemplate>
+                       <DataTemplate DataType="{x:Type vm:ListItemTemplate}">
+                           <StackPanel Spacing="15"
+                                       Background="#7D112D"
+                                       Orientation="Horizontal"> <!--menor vermelho2_edit-->
+                               <TextBlock 
+                                Text="{Binding Label}"
+                                FontSize="15"
+                                FontFamily="Didone"
+                                FontStyle="Italic"
+                                FontWeight="Bold"
+                                Foreground="#81d7cd"/> <!--menor texto azul_edit-->
+                           </StackPanel>
+                       </DataTemplate>
+                   </ListBox.ItemTemplate>
+               </ListBox>
+           </StackPanel>
+        </SplitView.Pane>
+        <SplitView.Content>
+            <Border CornerRadius="12 0 0 0">
+                <TransitioningContentControl Content="{Binding CurrentPage}"/>
+            </Border>
+        </SplitView.Content>
+    </SplitView>
+</UserControl>

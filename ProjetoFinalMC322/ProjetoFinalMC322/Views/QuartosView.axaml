@@ -1,0 +1,46 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="ProjetoFinalMC322.Views.QuartosView">
+    <StackPanel 
+        Background="#7D112D"
+        Margin="20">
+        <TextBlock  
+            Margin="0 5" 
+            FontSize="15"
+            FontFamily="Didone"
+            FontStyle="Italic"
+            FontWeight="Bold"
+            Foreground="#81d7cd"
+            HorizontalAlignment="Center"
+            >Escolha um dos quartos disponíveis:
+        </TextBlock>
+        <ListBox 
+            FontSize="35"
+            Foreground="#81d7cd"
+            FontFamily = "Avant Garde"
+            Background="#24050D"
+            
+            x:Name="Quartos">
+            <!--ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Background="yellow"> 
+                        <TextBlock 
+                            Text="teste"
+                            FontSize="15"
+                            FontFamily="Avant Garde"
+                            Background="#591123"
+                            FontStyle="Italic"
+                            Foreground="#81d7cd">
+                        </TextBlock> 
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate-->
+        </ListBox>
+    </StackPanel>
+</UserControl>
+
+
+

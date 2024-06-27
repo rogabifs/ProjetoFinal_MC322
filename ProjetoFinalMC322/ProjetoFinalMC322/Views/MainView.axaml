@@ -7,37 +7,44 @@
              x:Class="ProjetoFinalMC322.Views.MainView"
              x:DataType="vm:MainViewModel">
   <Design.DataContext>
-    <!-- This only sets the DataContext for the previewer in an IDE,
-         to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
     <vm:MainViewModel />
   </Design.DataContext>
     <SplitView IsPaneOpen="{Binding IsPaneOpen}"
-               OpenPaneLength="200"
+               OpenPaneLength="330"
                CompactPaneLength="1000"
                DisplayMode="CompactInline"
-               Background="White"
-               PaneBackground="#1e1e1e">
+               Background="#B9EDE7"
+               PaneBackground="#5b1023"> <!--fundo geral e lateral vermelho e branco_edit-->
         <SplitView.Pane>
            <StackPanel Spacing="8"
                        Margin="1">
-               <TextBlock Text="Bem-vindo"
-                          FontFamily="Bold"
-                          />
-               <ListBox ItemsSource="{Binding Items}" SelectedItem="{Binding SelectedListItem}">
+               <TextBlock 
+                    Text = "Bem-Vindo ao Hotel X"
+                    FontFamily = "Avant Garde"
+                    FontSize = "25"
+                    FontWeight = "Bold"
+                    Foreground = "#efece2"
+                    Background = "#5b1023"
+                    HorizontalAlignment = "Center"/>  <!--titulo e seu fundo vermelho2 editado-->
+               <ListBox 
+                    ItemsSource="{Binding Items}" 
+                    SelectedItem="{Binding SelectedListItem}" 
+                    Background="#7D112D"> <!--maior vermelho2 editado-->
                    <ListBox.ItemTemplate>
                        <DataTemplate DataType="{x:Type vm:ListItemTemplate}">
                            <StackPanel Spacing="15"
-                                       Orientation="Horizontal">
-                               <TextBlock Text="{Binding Label}"/>
+                                       Background="#7D112D"
+                                       Orientation="Horizontal"> <!--menor vermelho2_edit-->
+                               <TextBlock 
+                                Text="{Binding Label}"
+                                FontSize="15"
+                                FontFamily="Didone"
+                                FontStyle="Italic"
+                                FontWeight="Bold"
+                                Foreground="#81d7cd"/> <!--menor texto azul_edit-->
                            </StackPanel>
                        </DataTemplate>
                    </ListBox.ItemTemplate>
-                   <!-- <TextBlock Text="Bem-Vindo!" -->
-                   <!--            FontWeight="Bold"></TextBlock> -->
-                <!-- <ListBoxItem>Quartos</ListBoxItem> -->
-                <!-- <ListBoxItem>Clientes</ListBoxItem> -->
-                <!-- <ListBoxItem>Funcionarios</ListBoxItem> -->
-                <!-- <ListBoxItem>Restaurante</ListBoxItem> -->
                </ListBox>
            </StackPanel>
         </SplitView.Pane>

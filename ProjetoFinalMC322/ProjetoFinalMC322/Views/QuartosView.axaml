@@ -4,8 +4,64 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
              x:Class="ProjetoFinalMC322.Views.QuartosView">
-    <StackPanel Margin="20">
-        <TextBlock Margin="0 5">Escolha um quarto:</TextBlock>
-        <ListBox x:Name="Quartos"/>
+    <!--Design.DataContext>
+             x:DataType="vm:QuartosViewModel"
+        <vm:QuartosViewModel />
+    </Design.DataContext-->
+
+    <StackPanel 
+        Background="#7D112D"
+        Margin="20">
+        <TextBlock  
+            Margin="0 5" 
+            FontSize="15"
+            FontFamily="Didone"
+            FontStyle="Italic"
+            FontWeight="Bold"
+            Foreground="#81d7cd"
+            HorizontalAlignment="Center"
+            >Escolha um dos quartos disponíveis:
+        </TextBlock>
+        <ListBox 
+            FontSize="35"
+            Foreground="#81d7cd"
+            FontFamily = "Avant Garde"
+            Background="#24050D"
+            
+            x:Name="Quartos">
+            <!--ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Background="yellow"> 
+                        <TextBlock 
+                            Text="Binding Numero"
+                            FontSize="15"
+                            FontFamily="Avant Garde"
+                            Background="#591123"
+                            FontStyle="Italic"
+                            Foreground="#81d7cd">
+                        </TextBlock> 
+                        <TextBlock 
+                            Text="Binding Tipo"
+                            FontSize="15"
+                            FontFamily="Avant Garde"
+                            Background="#591123"
+                            FontStyle="Italic"
+                            Foreground="#81d7cd">
+                        </TextBlock> 
+                        <TextBlock 
+                            Text="Binding Disponivel"
+                            FontSize="15"
+                            FontFamily="Avant Garde"
+                            Background="#591123"
+                            FontStyle="Italic"
+                            Foreground="#81d7cd">
+                        </TextBlock>  
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate-->
+        </ListBox>
     </StackPanel>
 </UserControl>
+
+
+

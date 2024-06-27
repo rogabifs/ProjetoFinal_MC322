@@ -7,6 +7,6 @@
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="ProjetoFinalMC322.Views.MainWindow"
         Icon="/Assets/avalonia-logo.ico"
-        Title="ProjetoFinalMC322">
+        Title="HotelX">
         <views:MainView />
 </Window>
